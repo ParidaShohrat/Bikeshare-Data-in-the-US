@@ -170,9 +170,10 @@ def user_stats(df):
         print("\nThis took %s seconds." % (time.time() - start_time))
         print('-'*40)
 
+
 def raw_data(df):
     """Displays 5 lines of raw data"""
-
+    # add raw data 
     i = 0
     while True:
         answer = input('Would you like to see 5 lines of raw data? Enter yes or no:').lower()
