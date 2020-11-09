@@ -37,7 +37,6 @@ def get_filters():
 
     print('-'*40)
     return city, month, day
-
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -72,8 +71,6 @@ def load_data(city, month, day):
         # filter by day of week to create the new dataframe
         df[df['day_of_week'] == day.title()]
     return df
-
-
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -97,8 +94,6 @@ def time_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
-
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -120,8 +115,6 @@ def station_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
-
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
@@ -138,8 +131,6 @@ def trip_duration_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
-
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
@@ -169,14 +160,11 @@ def user_stats(df):
 
         print("\nThis took %s seconds." % (time.time() - start_time))
         print('-'*40)
-
-
 def raw_data(df):
     """Displays 5 lines of raw data"""
-    # add raw data 
     i = 0
     while True:
-        answer = input('Would you like to see 5 lines of raw data? Enter yes or no:').lower()
+        answer = input('\nWould you like to see 5 lines of raw data? Enter yes or no:\n').lower()
         if answer =='yes':
             print(df.iloc[i:i+5])
             i += 5
@@ -197,7 +185,6 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-
 
 if __name__ == "__main__":
 	main()
