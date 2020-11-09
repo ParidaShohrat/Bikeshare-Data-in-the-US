@@ -12,3 +12,7 @@
 
 ### Credits
 > Refer to https://pandas.pydata.org/pandas-docs/stable/reference/index.htmlÂmm
+
+### Library
+> * **Pandas**
+> * **NumPy**
