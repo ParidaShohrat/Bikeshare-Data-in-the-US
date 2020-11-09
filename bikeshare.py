@@ -165,7 +165,7 @@ def raw_data(df):
     # add raw data
     i = 0
     while True:
-        answer = input('Would you like to see 5 lines of raw data? Enter yes or no:').lower()
+        answer = input('\nWould you like to see 5 lines of raw data? Enter yes or no:\n').lower()
         if answer =='yes':
             print(df.iloc[i:i+5])
             i += 5
